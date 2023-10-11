@@ -1,0 +1,329 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>搭建自己的小程序 | 地球OL之小水篇</title><meta name="robots" content="noindex"><meta name="author" content="小水"><meta name="copyright" content="小水"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="00-unity教程00-rpg maker教程优先级与人物相同就类似空气墙 rpg maker教程 JS脚本 Dcloud 生态-  rpg maker MZ学习笔记  运行你的第一个游戏！首页 - GmHub  游戏创作 的组织 RPG Maker MV 帮助文档中文汉化版 (miaowm5.github.io) 两个教程  手把手教你开发游戏 RPG制作 保姆级教学_哔哩哔哩_bilibil">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建自己的小程序">
+<meta property="og:url" content="https://happywater520.github.io/2023/10/08/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/4-%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/index.html">
+<meta property="og:site_name" content="地球OL之小水篇">
+<meta property="og:description" content="00-unity教程00-rpg maker教程优先级与人物相同就类似空气墙 rpg maker教程 JS脚本 Dcloud 生态-  rpg maker MZ学习笔记  运行你的第一个游戏！首页 - GmHub  游戏创作 的组织 RPG Maker MV 帮助文档中文汉化版 (miaowm5.github.io) 两个教程  手把手教你开发游戏 RPG制作 保姆级教学_哔哩哔哩_bilibil">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://happywater520.github.io/img/favicon.jpg">
+<meta property="article:published_time" content="2023-10-08T07:52:46.572Z">
+<meta property="article:modified_time" content="2023-10-08T17:19:14.681Z">
+<meta property="article:author" content="小水">
+<meta property="article:tag" content="这里是keywords">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://happywater520.github.io/img/favicon.jpg"><link rel="shortcut icon" href="/img/favicon.jpg"><link rel="canonical" href="https://happywater520.github.io/2023/10/08/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/4-%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?df9847ebf1288f357b3b9f0b3371b5d5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 小水","link":"链接: ","source":"来源: 地球OL之小水篇","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '搭建自己的小程序',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-10-09 01:19:14'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/favicon.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">19</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-tags"></i><span> 知识图谱</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-heart"></i><span> 创作痕迹</span></a></div><div class="menus_item"><a class="site-page" href="/timeline/"><i class="fa-fw fas fa-archive"></i><span> 时间日志</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url('/img/index.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="地球OL之小水篇"><span class="site-name">地球OL之小水篇</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-tags"></i><span> 知识图谱</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-heart"></i><span> 创作痕迹</span></a></div><div class="menus_item"><a class="site-page" href="/timeline/"><i class="fa-fw fas fa-archive"></i><span> 时间日志</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">搭建自己的小程序</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-08T07:52:46.572Z" title="发表于 2023-10-08 15:52:46">2023-10-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-08T17:19:14.681Z" title="更新于 2023-10-09 01:19:14">2023-10-09</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%97%B6%E4%BB%A3%E4%B8%AA%E4%BD%93%E4%B9%A6/">与信息时代个体书</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%97%B6%E4%BB%A3%E4%B8%AA%E4%BD%93%E4%B9%A6/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/">独立开发指南</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="搭建自己的小程序"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="00-unity教程"><a href="#00-unity教程" class="headerlink" title="00-unity教程"></a><strong>00-unity教程</strong></h2><h3 id="00-rpg-maker教程"><a href="#00-rpg-maker教程" class="headerlink" title="00-rpg maker教程"></a><strong>00-rpg maker教程</strong></h3><p>优先级与人物相同就类似空气墙</p>
+<h1 id="rpg-maker教程-JS脚本-Dcloud-生态"><a href="#rpg-maker教程-JS脚本-Dcloud-生态" class="headerlink" title="rpg maker教程 JS脚本 Dcloud 生态"></a><strong>rpg maker教程 JS脚本 Dcloud 生态</strong></h1><p>- </p>
+<h1 id="rpg-maker-MZ学习笔记-运行你的第一个游戏！"><a href="#rpg-maker-MZ学习笔记-运行你的第一个游戏！" class="headerlink" title="rpg maker MZ学习笔记  运行你的第一个游戏！"></a>rpg maker MZ学习笔记  运行你的第一个游戏！</h1><p><a target="_blank" rel="noopener" href="https://www.gmhub.com/home">首页 - GmHub</a>  游戏创作 的组织</p>
+<p><a target="_blank" rel="noopener" href="http://miaowm5.github.io/RMMV-F1/">RPG Maker MV 帮助文档中文汉化版 (miaowm5.github.io)</a></p>
+<p>两个教程</p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1To4y1U72L/?spm_id_from=333.337.search-card.all.click&vd_source=f33a8238eff0176807e3517c2acd79aa">手把手教你开发游戏 RPG制作 保姆级教学_哔哩哔哩_bilibili</a></p>
+<p>Hi，终于等到你了！</p>
+<p>RPG Maker 是一款自制角色扮演游戏的工具，正版软件售价 RMB 200+</p>
+<p>RPG Maker MV 汉化版： <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1bEJf3er8HE2OFuThC9ourw?pwd=xfsz">https://pan.baidu.com/s/1bEJf3er8HE2OFuThC9ourw?pwd=xfsz</a> 密码：xfsz</p>
+<p>RPG Maker XP 汉化版： <a target="_blank" rel="noopener" href="https://ixfsz.lanzoue.com/i93dXweuz2d">https://ixfsz.lanzoue.com/i93dXweuz2d</a> 密码:xfsz</p>
+<p>注：软件仅供学习交流使用，身体力行，支持正版！</p>
+<p>这款软件的保姆级教程：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1To4y1U72L">https://www.bilibili.com/video/BV1To4y1U72L</a></p>
+<p>如果遇到问题，可以添加社长微信哈↓</p>
+<p>社长微信：xfsz2333</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1mX4y1g7op/?spm_id_from=333.337.search-card.all.click&vd_source=f33a8238eff0176807e3517c2acd79aa">【MV❀RPG制作大师】萌新基础速成教学全集_哔哩哔哩_bilibili</a></p>
+<p>云书自建的RPG论坛欢迎加入：<a target="_blank" rel="noopener" href="https://www.rpgyunshu.cn/">https://www.rpgyunshu.cn</a> 小白速成基础教学课程。共三十五课时的基础内容！ 正版STEAM购买地址：<a target="_blank" rel="noopener" href="https://store.steampowered.com/app/363890/RPG_Maker_MV">https://store.steampowered.com/app/363890/RPG_Maker_MV</a> 非正版下载地址：<a target="_blank" rel="noopener" href="https://pan.baidu.com/share/init?surl=3EPUkZqLxF4e6zB6plMx0g">https://pan.baidu.com/share/init?surl=3EPUkZqLxF4e6zB6plMx0g</a> 验证码：unuq（如果失效进Q群下载：251801506） 课程素材链接： <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1ydcH3qmUS1FFna4QDCcURA">https://pan.baidu.com/s/1ydcH3qmUS1FFna4QDCcURA</a> 提取码:ysys 喵呜喵5MV帮助文本汉化地址：<a target="_blank" rel="noopener" href="https://miaowm5.github.io/RMMV-F1">https://miaowm5.github.io/RMMV-F1</a> 安卓打包资源链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1q6LtpAzgTNVgqvfz_DENOw?pwd=d7ae">https://pan.baidu.com/s/1q6LtpAzgTNVgqvfz_DENOw?pwd=d7ae</a> 提取码: d7ae 追逐战优化插件：<a target="_blank" rel="noopener" href="https://share.weiyun.com/OdQSp0Xt">https://share.weiyun.com/OdQSp0Xt</a> MV可爱纸娃娃素材：<a target="_blank" rel="noopener" href="https://wws.lanzouw.com/b03j9qd2d">https://wws.lanzouw.com/b03j9qd2d</a> 密码:fv3o</p>
+<p>小白速成基础教学课程。共三十五课时的基础内容！</p>
+<p>正版STEAM购买地址：<a target="_blank" rel="noopener" href="https://store.steampowered.com/app/363890/RPG_Maker_MV">https://store.steampowered.com/app/363890/RPG_Maker_MV</a></p>
+<p>非正版下载地址：<a target="_blank" rel="noopener" href="https://pan.baidu.com/share/init?surl=3EPUkZqLxF4e6zB6plMx0g">https://pan.baidu.com/share/init?surl=3EPUkZqLxF4e6zB6plMx0g</a></p>
+<p>验证码：unuq</p>
+<p>课程素材链接：</p>
+<p><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1ydcH3qmUS1FFna4QDCcURA">https://pan.baidu.com/s/1ydcH3qmUS1FFna4QDCcURA</a></p>
+<p>提取码:ysys</p>
+<p>帮助文本汉化：<a target="_blank" rel="noopener" href="https://miaowm5.github.io/RMMV-F1">https://miaowm5.github.io/RMMV-F1</a></p>
+<p>安卓打包工具链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1arQ9kXaHQnFyIUiYqhCvPg">https://pan.baidu.com/s/1arQ9kXaHQnFyIUiYqhCvPg</a></p>
+<p>提取码：9qtj</p>
+</li>
+<li><p>萱萱分享的资源 <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1yhX419ppxDlc75oY0YWQWw?pwd=kyxx">https://pan.baidu.com/s/1yhX419ppxDlc75oY0YWQWw?pwd=kyxx</a> 提取码：kyxx 解压密码 vc66</p>
+</li>
+</ul>
+<p>首先我们用rpgmarker MZ  和MV</p>
+<p>[RPG Maker_百度百科 (baidu.com)](<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/RPG">https://baike.baidu.com/item/RPG</a> Maker&#x2F;9274606)</p>
+<p>[RPG Maker MV_百度百科 (baidu.com)](<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/RPG">https://baike.baidu.com/item/RPG</a> Maker MV&#x2F;18328754?structureClickId&#x3D;18328754&amp;structureId&#x3D;703153e26c51abc87b05f794&amp;structureItemId&#x3D;e6d27944b124bc725dd29b8a&amp;lemmaFrom&#x3D;starMapContent_star&amp;fromModule&#x3D;starMap_content)</p>
+<p>这里有个官方教程 我打算录一个视频 玩官方教程的</p>
+<p>还有做 马里奥的 类空洞骑士 这个也很依赖美术</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1bX4y1H777?p=4&vd_source=f33a8238eff0176807e3517c2acd79aa">第四节课 游戏打包_哔哩哔哩_bilibili</a>  <em><strong>*GameCreator 教程*</strong></em></p>
+<h1 id="5-地图"><a href="#5-地图" class="headerlink" title="5 地图"></a>5 地图</h1><p>地图的图块、内部和外观是不一样的。</p>
+<p>禁止跑步 shift可以加速</p>
+<p>透明状态，运行之后是过不去的，可以加远景图</p>
+<p>可以增加 夜晚状态 更改画面色调</p>
+<h1 id="6-字幕对话"><a href="#6-字幕对话" class="headerlink" title="6  字幕对话"></a>6  字幕对话</h1><p>滚动字幕 、给文本显示在中间和黑色阴影；</p>
+<p><strong>独立开关A、自动执行事件、设置并行处理</strong></p>
+<p>透明状态下开始游戏  数据库 系统里面 或者单独的事件可以更改人物透明状态；</p>
+<p>空白地图远景图、场景移动到其他地图；</p>
+<p>增加天气 音效是播放obs 淡出obs和bgm</p>
+<h2 id="我的效果"><a href="#我的效果" class="headerlink" title="我的效果:"></a>我的效果:</h2><p>空白地图+远景图\  引入滚动开场白</p>
+<aside> 💭 **我 小水(之一）**
+
+
+<p><strong>你现在看到的是</strong></p>
+<p><strong>地球OL 大型现实游戏</strong></p>
+<p>（<strong>你身处其中 也在和诸人交互）</strong></p>
+<p><strong>欢迎来到我的世界， 一个养成“小水”的支线</strong></p>
+</aside>
+
+<p>\bgm音效开启\  透明人物开启</p>
+<p>跳转到新地图、MBG关闭、透明人物关闭，人物开始说话显示在中间（可以有天气和obs音效）</p>
+<p>说完设置独立开关开启否则会循环 、在新事件页把独立开关关闭、 人物可以自由移动</p>
+<h1 id="7、8-和npc剧情"><a href="#7、8-和npc剧情" class="headerlink" title="7、8  和npc剧情"></a>7、8  和npc剧情</h1><p>显示文字：是否跳过剧情 、显示选项 ：是或者否</p>
+<p>设置npc、设置移动事件 本事件 ；显示气泡图标 本事件 惊讶；显示文字 添加脸图；</p>
+<p>玩家选择反应 ；npc选择反应，可以让他消失 透明状态，可以玩家跟他一起走，统一速度</p>
+<h2 id="我的效果："><a href="#我的效果：" class="headerlink" title="我的效果："></a>我的效果：</h2><p>（我自己希望 不同选项有不同的加成）</p>
+<p>这个npc是过去的14岁的小水， 在哭泣的她，我们可以看到他的日记，了解到从前的她，这是一个架空的世界。</p>
+<p>我自己则是现在的小水，<strong>我的场景是现在的卧室，日常会做饭，运动，玩电脑，统一风格视觉上的画画会吸引人，也是不可替代之处。</strong></p>
+<h1 id="9-事件-商店处理"><a href="#9-事件-商店处理" class="headerlink" title="9   事件 商店处理"></a>9   事件 商店处理</h1><p>（一个地图 选一个房屋 可以 新建内部   shifit消掉边边</p>
+<p>再房屋外面一格子  设置场所移动：属性 优先级与人物相同 人物接触）</p>
+<p>npc 3 商店处理  设置商品 选择标准是数据库的价格  ；勾选只能购买 就不能卖给商店</p>
+<ul>
+<li>旅馆老板</li>
+</ul>
+<h2 id="我的效果：-1"><a href="#我的效果：-1" class="headerlink" title="我的效果："></a>我的效果：</h2><p>我要卖什么呢，这个跟属性和剧情有关 比如卖书 关键的信息</p>
+<h1 id="11-12事件-战斗处理"><a href="#11-12事件-战斗处理" class="headerlink" title="11 12事件 战斗处理"></a>11 12事件 战斗处理</h1><p>触发条件 事件接触 碰到之后就战斗；自主移动 接近 玩家 ； 允不允许逃跑；打败会获得什么东西</p>
+<p>数据库 系统勾选 使用sideview 战斗系统；数据库 敌群 修改参数</p>
+<p>地图 可以设置 敌群 权重为5就是 走多少步可以遇见敌群</p>
+<p>数据库 敌人选项和敌群   设置打死获得的经验和金币</p>
+<p>数据库 职业选项  可以设置经验曲线值</p>
+<h2 id="我的效果：-2"><a href="#我的效果：-2" class="headerlink" title="我的效果："></a>我的效果：</h2><p><strong>我想要把敌群做成抑郁症的大黑狗！！有一个地图都是敌人 然后你要逃跑</strong></p>
+<h1 id="13-14-人物"><a href="#13-14-人物" class="headerlink" title="13 14 人物"></a>13 14 人物</h1><p>可以捏人</p>
+<p>可以有密码开宝箱，可以用钥匙开门</p>
+<p>可以 满足一些条件 增加队员</p>
+<p>可以 npc <strong>增加随机对话</strong></p>
+<h2 id="我的效果-1"><a href="#我的效果-1" class="headerlink" title="我的效果"></a>我的效果</h2><p><strong>设置一些心门 需要一些物件才能打开</strong></p>
+<h1 id="游戏设计、游戏开发笔记"><a href="#游戏设计、游戏开发笔记" class="headerlink" title="游戏设计、游戏开发笔记"></a>游戏设计、游戏开发笔记</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">[路无悔的个人空间_哔哩哔哩_bilibili](https://space.bilibili.com/17967163)  </span><br><span class="line"></span><br><span class="line"># 战斗系统 让玩家共情，产生体验和动机</span><br><span class="line"></span><br><span class="line">[游戏设计笔记04-为你的RPG设计“战斗系统”_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1hK4y1a7L7/?spm_id_from=333.337.search-card.all.click&amp;vd_source=f33a8238eff0176807e3517c2acd79aa)    </span><br><span class="line"></span><br><span class="line">- 选择即时、半即时、回合制</span><br><span class="line">- 战斗操作单人、多人</span><br><span class="line">- 胜利条件是什么，希望胜利是**玩家做任务（大部分）**练级带来的实力碾压还是**玩家操作（小部分）**</span><br><span class="line"></span><br><span class="line">- 强调成长的主题**、战斗是验证成长**的最好方式</span><br><span class="line">- **战斗也是制造压力**的最好方式，在战斗中感受角色压力两难</span><br><span class="line"></span><br><span class="line"># 肉鸽 roguelike  可以用弹幕做</span><br><span class="line"></span><br><span class="line">[【古早游戏】roguelike鼻祖——Rogue_单机游戏热门视频 (bilibili.com)](https://www.bilibili.com/video/BV1SY411V74n/?spm_id_from=333.337.search-card.all.click&amp;vd_source=f33a8238eff0176807e3517c2acd79aa)  </span><br><span class="line"></span><br><span class="line"># 2D射击游戏 我也i想做！</span><br><span class="line"></span><br><span class="line"># 经营类 种田游戏  我也想做！</span><br><span class="line"></span><br><span class="line"># 但是所有这些形式都是为了做一个现实题材的</span><br><span class="line"></span><br><span class="line">比如高考galgame 养成游戏，比较接近</span><br></pre></td></tr></table></figure>
+
+<p>限售</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV11541187e1/?p=19&spm_id_from=pageDriver&vd_source=f33a8238eff0176807e3517c2acd79aa">第18课：如何发布自己的游戏？客户端、浏览器、移动端开发模式有何异同？<em>哔哩哔哩</em>bilibili</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV11541187e1/?p=7&spm_id_from=pageDriver&vd_source=f33a8238eff0176807e3517c2acd79aa">第6课：独立开关，阅后即焚<em>哔哩哔哩</em>bilibili</a>    阅后即焚</p>
+<ul>
+<li>需要去获得四把钥匙才能开门，不用开关，每次获得 变量+&#x3D;1</li>
+<li>独立变量：这里已经探索过了</li>
+<li>需要收集4个，当前已经拥有{}个</li>
+<li></li>
+<li>P9 可以根据随机变量不同的值设置不同的事件 抽卡模拟器</li>
+<li>p10 可以做GPS，某个npc在地图的哪个位置</li>
+<li></li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV11541187e1?p=16&vd_source=f33a8238eff0176807e3517c2acd79aa">第15课：无聊的理论课时间，把所有的事件指令全都过一遍<em>哔哩哔哩</em>bilibili</a></p>
+<ul>
+<li>数值输入，密码锁</li>
+<li>循环，可以伐木60次</li>
+<li>滚动地图，可以做神庙逃亡</li>
+</ul>
+<!-- flag of hidden posts --></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://happywater520.github.io">小水</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://happywater520.github.io/2023/10/08/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/4-%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">https://happywater520.github.io/2023/10/08/独立开发内容创作/独立开发指南/4-游戏开发/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://happywater520.github.io" target="_blank">地球OL之小水篇</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/favicon.jpg" data-sites="wechat,qq,weibo,facebook,twitter"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/gongzhonghao.jpg" target="_blank"><img class="post-qr-code-img" src="/img/gongzhonghao.jpg" alt="关注就是对我的鼓励"/></a><div class="post-qr-code-desc">关注就是对我的鼓励</div></li></ul></div></div><nav class="pagination-post" id="pagination"></nav></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#00-unity%E6%95%99%E7%A8%8B"><span class="toc-text">00-unity教程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#00-rpg-maker%E6%95%99%E7%A8%8B"><span class="toc-text">00-rpg maker教程</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#rpg-maker%E6%95%99%E7%A8%8B-JS%E8%84%9A%E6%9C%AC-Dcloud-%E7%94%9F%E6%80%81"><span class="toc-text">rpg maker教程 JS脚本 Dcloud 生态</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#rpg-maker-MZ%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E8%BF%90%E8%A1%8C%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%B8%B8%E6%88%8F%EF%BC%81"><span class="toc-text">rpg maker MZ学习笔记  运行你的第一个游戏！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-%E5%9C%B0%E5%9B%BE"><span class="toc-text">5 地图</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6-%E5%AD%97%E5%B9%95%E5%AF%B9%E8%AF%9D"><span class="toc-text">6  字幕对话</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E6%95%88%E6%9E%9C"><span class="toc-text">我的效果:</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#7%E3%80%818-%E5%92%8Cnpc%E5%89%A7%E6%83%85"><span class="toc-text">7、8  和npc剧情</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E6%95%88%E6%9E%9C%EF%BC%9A"><span class="toc-text">我的效果：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#9-%E4%BA%8B%E4%BB%B6-%E5%95%86%E5%BA%97%E5%A4%84%E7%90%86"><span class="toc-text">9   事件 商店处理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E6%95%88%E6%9E%9C%EF%BC%9A-1"><span class="toc-text">我的效果：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#11-12%E4%BA%8B%E4%BB%B6-%E6%88%98%E6%96%97%E5%A4%84%E7%90%86"><span class="toc-text">11 12事件 战斗处理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E6%95%88%E6%9E%9C%EF%BC%9A-2"><span class="toc-text">我的效果：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#13-14-%E4%BA%BA%E7%89%A9"><span class="toc-text">13 14 人物</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E6%95%88%E6%9E%9C-1"><span class="toc-text">我的效果</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1%E3%80%81%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0"><span class="toc-text">游戏设计、游戏开发笔记</span></a></div></div></div></div></main><footer id="footer" style="background-image: url('/img/index.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2016 - 2023 By 小水</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a target="_blank" rel="noopener" href="http://beian.miit.gov.cn"><img class="icp-icon" src="icp图片"><span>备案号：桂ICP备2023005211号</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaid.length === 0) return
+  const runMermaid = () => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from($mermaid).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const loadMermaid = () => {
+    window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+  }
+
+  btf.addModeChange('mermaid', runMermaid)
+
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(() => {
+  function abcjsInit() {
+    function abcjsFn() {
+      for (let abcContainer of document.getElementsByClassName("abc-music-sheet")) {
+        ABCJS.renderAbc(abcContainer, abcContainer.innerHTML, {responsive: 'resize'})
+      }
+    }
+    
+    typeof ABCJS === 'object' ? abcjsFn()
+      : getScript('https://cdn.jsdelivr.net/npm/abcjs/dist/abcjs-basic-min.min.js').then(abcjsFn)
+  }
+
+  window.pjax ? abcjsInit() : document.addEventListener('DOMContentLoaded', abcjsInit)
+})()</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="❤,❤,喜,欢,你,❤,❤,❤" data-fontsize="15px" data-random="false" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
